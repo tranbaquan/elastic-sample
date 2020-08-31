@@ -13,8 +13,9 @@
 * Run project as Spring Boot project
 ### Sample
 
-* `curl --request GET --url dockhttp://localhost:8080/elastic/fields`
+* `curl --request GET --url http://localhost:8080/elastic/fields`
 * `curl --request GET --url 'http://localhost:8080/elastic/chart-data?fieldName=geoip.region_name'`
+* `curl --request GET --url 'http://localhost:8080/elastic/chart-data?fieldName=customer_gender'`
 
 ### Let explore elasticsearch
 * _https://www.elastic.co/home_

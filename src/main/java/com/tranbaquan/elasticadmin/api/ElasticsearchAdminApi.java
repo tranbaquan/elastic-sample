@@ -63,9 +63,9 @@ public class ElasticsearchAdminApi {
         return Mono.create(sink -> elasticsearchClient.searchAsync(request, RequestOptions.DEFAULT, new ActionListener<SearchResponse>() {
             @Override
             public void onResponse(SearchResponse searchResponse) {
-                Terms sex = searchResponse.getAggregations().get("agg");
+                Terms agg = searchResponse.getAggregations().get("agg");
                 ChartData chart = new ChartData();
-                for (Terms.Bucket bucket: sex.getBuckets()) {
+                for (Terms.Bucket bucket: agg.getBuckets()) {
                     chart.getLabels().add(bucket.getKey().toString());
                     chart.getData().add(bucket.getDocCount());
                 }
