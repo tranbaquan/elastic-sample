@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /elastic
+elastic:
+  client:
+    hostname: localhost
+    port: 9200
+    schema: http
+  index:
+    name: kibana_sample_data_ecommerce

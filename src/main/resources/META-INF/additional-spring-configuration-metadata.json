@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "elastic.client.hostname",
+      "type": "java.lang.String",
+      "description": "Description for elastic.client.hostname."
+    },
+    {
+      "name": "elastic.client.port",
+      "type": "java.lang.Integer",
+      "description": "Description for elastic.client.port."
+    },
+    {
+      "name": "elastic.client.schema",
+      "type": "java.lang.String",
+      "description": "Description for elastic.client.schema."
+    },
+    {
+      "name": "elastic.index.name",
+      "type": "java.lang.String",
+      "description": "Description for elastic.index.name."
+    }
+  ]
+}
