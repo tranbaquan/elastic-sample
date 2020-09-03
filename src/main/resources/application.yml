@@ -9,3 +9,7 @@ elastic:
     schema: http
   index:
     name: kibana_sample_data_ecommerce
+
+# Testing only
+crossOrigin:
+  origin: http://localhost:3000
